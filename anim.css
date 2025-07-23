@@ -1,0 +1,240 @@
+
+@keyframes textShedow {
+    
+from{
+    text-shadow: white 0px 0px 15px;
+}
+to{
+    text-shadow: white 0px 0px 0px;
+}
+}
+
+@keyframes imageLeft{
+ 0%{
+   transform: translateX(-1000px);
+ }
+ 60%{
+    transform: translateX(50px);
+   
+ }
+ 80%{
+    transform: translateX(0px);
+   
+ }
+ 100%{
+    transform: rotate(-7deg);
+
+ }
+}
+@keyframes imageright{
+    0%{
+      transform: translateX(200px);
+    }
+    60%{
+       transform: translateX(-50px);
+    }
+    80%{
+        transform: translateX(0px);
+    }
+   
+    100%{
+       transform: rotate(5deg);
+    }  
+} 
+@keyframes scalImage{
+    from{
+        transform: scale(0.5,0.5);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+@keyframes PartnersAnim{
+    0%{
+        transform: translateX(0px) ;
+
+    }
+    4%{
+        transform: translateX(0px) ;
+    }
+   14%{
+        transform: translateX(-300px) ;
+    }
+   18%{
+        transform: translateX(-300px) ;
+    }
+   28%{
+        transform: translateX(-600px) ;
+    }
+    32%{
+        transform: translateX(-600px) ;
+    }
+    42%{
+        transform: translateX(-900px) ;
+    }
+    46%{
+        transform: translateX(-900px) ;
+    }
+
+
+   56%{
+        transform: translateX(-1200px) ;
+    }
+    60%{
+        transform: translateX(-1200px) ;
+    }
+  70%{
+        transform: translateX(-1500px) ;
+    }
+    74%{
+        transform: translateX(-1500px) ;
+    }
+   84%{
+        transform: translateX(-1800px) ;
+    }
+    88%{
+        transform: translateX(-1800px) ;
+    }
+    100%{
+        transform: translateX(0px) ;
+    }
+}
+
+
+
+@keyframes moveLeft{
+    from{
+        transform: translateX(-800px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes moveRight{
+    from{
+        transform: translateX(800px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes moveLeft{
+    from{
+        transform: translateX(-800px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes moveLeftButton{
+    from{
+        transform: translateX(-50%);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes moveRight{
+    from{
+        transform: translateX(800px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes moveLeft{
+    from{
+        transform: translateX(-800px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+
+    }
+}
+@keyframes crcl {
+      0% {
+            transform: rotate(0deg);
+      }
+
+      100% {
+            transform: rotate(180deg);
+      }
+}
+
+@keyframes crcl1 {
+      0% {
+            border-color: red transparent transparent red;
+            transform: rotate(180deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+            border-color: red transparent transparent red;
+
+      }
+}
+@keyframes crcl2{
+      0% {
+            border-color: yellow transparent transparent yellow;
+            transform: rotate(180deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+            border-color: yellow transparent  transparent yellow;
+
+      }
+}
+@keyframes crcl3{
+      0% {
+            border-color: blue transparent  transparent blue;
+            transform: rotate(180deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+            border-color:blue transparent  transparent blue;
+
+      }
+}
+@keyframes crcl4{
+      0% {
+            border-color: green transparent  transparent green;
+            transform: rotate(180deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+            border-color:green transparent  transparent green;
+
+      }
+}
+@keyframes crcl5{
+      0% {
+            border-color: rgba(117, 0, 128, 0.849) transparent  transparent rgba(117, 0, 128, 0.849);
+            transform: rotate(180deg);
+      }
+
+      100% {
+            transform: rotate(360deg);
+            border-color:rgba(117, 0, 128, 0.849) transparent  transparent rgba(117, 0, 128, 0.849);
+
+      }
+}

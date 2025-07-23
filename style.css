@@ -1,0 +1,811 @@
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    z-index: 10;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+
+}
+
+section {
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.b_main {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.main_iten {
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    padding: 2px;
+    background-color: black;
+
+}
+
+.menu_btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+}
+
+
+.main_anim {
+    transition: 0.3s;
+    background-image: linear-gradient(rgb(194, 199, 15), rgb(194, 199, 15));
+    background-size: 0 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.main_anim:hover {
+    background-size: 100% 100%;
+    color: black;
+    cursor: pointer !important;
+}
+
+.logo {
+    width: 200px;
+}
+
+.h_main {
+    display: none;
+}
+
+
+
+
+.btn hr {
+    width: 80px;
+    border: none;
+    height: 3px;
+    background-color: blueviolet;
+    margin-bottom: 15px;
+
+}
+
+.s_main {
+    display: none;
+
+}
+
+
+
+/*-----------------------------------------Section1 Text Anim----------------------------------------------*/
+.TextAnim {
+
+    padding-bottom: 200px;
+    background-image: url(img/bgbgb.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 70%;
+    padding-top: 200px;
+
+}
+
+
+.TextAnim p {
+    font-size: 36px;
+    color: rgba(240, 255, 255, 0);
+    animation: textShedow 5s forwards;
+
+}
+
+.txt1 {
+    margin-left: 200px;
+}
+
+.txt2 {
+    margin-left: 300px;
+    animation-delay: 2s !important;
+
+}
+
+.txt3 {
+    margin-left: 400px;
+    animation-delay: 4s !important;
+}
+
+/*-----------------------------------------welcomePrimus----------------------------------------------*/
+.welcomePrimus {
+
+
+    display: flex !important;
+
+}
+
+.welcomePrimus div {
+
+    width: 80%;
+
+
+}
+
+.welcomePrimusItem1 img {
+    border: 5px solid rgb(181, 8, 82);
+    position: relative;
+}
+
+
+.welcomePrimusItem1 .img1 {
+    position: relative;
+    width: 55%;
+    left: 5%;
+}
+
+.welcomePrimusItem1 .img2 {
+    position: relative;
+    bottom: 150px;
+    left: 2%;
+    width: 50%;
+
+    animation: imageLeft 3s forwards;
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+.welcomePrimusItem1 .img3 {
+    position: relative;
+
+    width: 40% !important;
+    transform: rotate(5deg);
+    bottom: 150px;
+
+    left: 5%;
+    animation: imageright 3s forwards;
+    animation-play-state: paused;
+
+
+}
+
+.welcomePrimusText,
+.welcomePrimusButton {
+    color: rgb(158, 164, 167);
+    float: right;
+    font-size: 30px;
+}
+
+.welcomePrimusText:hover,
+.welcomePrimusButton:hover {
+    background-color: rgb(181, 8, 82);
+    color: white;
+
+}
+
+.welcomePrimusText {
+    padding: 50px 30px 10px 30px;
+    text-align: justify;
+    color: rgb(158, 164, 167);
+}
+
+
+.welcomePrimusText .title {
+    color: rgb(181, 8, 82);
+    justify-content: center;
+
+}
+
+.welcomePrimusText:hover .title {
+
+    color: black !important;
+
+}
+
+.welcomePrimusButton {
+    width: fit-content !important;
+    padding: 30px 40px;
+    margin-top: 50px;
+}
+
+.welcomePrimusText,
+.welcomePrimusButton {
+    animation: scalImage 3s;
+    animation-play-state: paused;
+
+    border: solid rgb(181, 8, 82) 4px;
+}
+
+/*-----------------------------------------OUR PARTNERS----------------------------------------------*/
+.ourPartners {
+    display: flex;
+    background-color: #0f4961;
+    margin: 0;
+}
+
+.ourPartnersItem1 {
+    font-size: 50px;
+    color: white;
+    padding: 70px;
+}
+
+.ourPartnersItem2 {
+    width: 900px;
+    overflow-x: hidden;
+}
+
+.ourPartnersAnim {
+    width: 2800px;
+    animation: PartnersAnim 10s infinite;
+
+}
+
+
+.ourPartnersAnim img {
+    width: 280px;
+    margin: 10px;
+}
+
+/*-----------------------------------------OUR PROGRESS----------------------------------------------*/
+.crcl {
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+
+
+
+
+
+}
+
+.crcl::after,
+.crcl::before {
+    content: " ";
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    width: 250px;
+    height: 250px;
+    border: solid 5px;
+
+    border-radius: 50%;
+
+}
+
+
+
+
+.crcl1.run::before,
+.crcl1.run::after,
+.crcl2.run::before,
+.crcl2.run::after,
+.crcl3.run::before,
+.crcl3.run::after,
+.crcl4.run::before,
+.crcl4.run::after,
+.crcl5.run::before,
+.crcl5.run::after {
+    animation-play-state: running;
+}
+
+
+.crcl1::before {
+
+
+    border-color: red transparent transparent red;
+    animation: crcl 1s forwards linear;
+    animation-play-state: paused;
+
+
+}
+
+.crcl1::after {
+
+
+    border-color: white transparent transparent white;
+    animation: crcl1 1s forwards 1s linear;
+    animation-play-state: paused;
+
+}
+
+.crcl2::before {
+
+
+    border-color: yellow transparent transparent yellow;
+    animation: crcl 1s forwards linear paused;
+
+}
+
+.crcl2::after {
+
+
+    border-color: white transparent transparent white;
+    animation: crcl2 1s forwards 1s linear paused;
+}
+
+.crcl3::before {
+
+
+    border-color: blue transparent transparent blue;
+    animation: crcl 1s forwards linear paused;
+
+}
+
+.crcl3::after {
+
+
+    border-color: white transparent transparent white;
+    animation: crcl3 1s forwards 1s linear paused;
+}
+
+.crcl4::before {
+
+
+    border-color: green transparent transparent green;
+    animation: crcl 1s forwards linear paused;
+
+}
+
+.crcl4::after {
+
+
+    border-color: white transparent transparent white;
+    animation: crcl4 1s forwards 1s linear paused;
+}
+
+.crcl5::before {
+
+
+    border-color: rgba(117, 0, 128, 0.849) transparent transparent rgba(117, 0, 128, 0.849);
+    animation: crcl 1s forwards linear paused;
+
+}
+
+.crcl5::after {
+
+
+    border-color: white transparent transparent white;
+    animation: crcl5 1s forwards 1s linear paused;
+}
+
+/*-----------------------------------------OUR PROGRESS----------------------------------------------*/
+
+.progressTitle {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+.progress {
+    background-image: url(img/green-and-black-wallpapers-mobile.jpg);
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.progressBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.progressItem div {
+
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.progressItem div img {
+    margin-top: 90px;
+    width: 100px;
+    height: auto;
+}
+
+
+.progressItem p {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/*-----------------------------------------CHooseUs----------------------------------------------*/
+
+.chooseUsTitle {
+    text-align: center;
+    font-size: 50px;
+    width: 100vw;
+    color: yellow;
+}
+
+.chooseUs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chooseUsItem {
+
+    width: 20%;
+    border: solid 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chooseUsItem img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.chooseUsItem1 {
+    border-color: rgb(43, 79, 163);
+    color: rgb(43, 79, 163);
+}
+
+.chooseUsItem1 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(43, 79, 163), rgba(0, 0, 0, 0));
+    border: none;
+
+}
+
+.chooseUsItem1 {
+    border-color: #2b4fa3;
+    color: #2b4fa3;
+}
+
+.chooseUsItem1 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #2b4fa3, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+.chooseUsItem3 {
+    border-color: #0391d7;
+    color: #0391d7;
+}
+
+.chooseUsItem3 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #0391d7, rgba(0, 0, 0, 0));
+    border: none;
+
+}
+
+.chooseUsItem4 {
+    border-color: #711a4e;
+    color: #711a4e;
+}
+
+.chooseUsItem4 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #711a4e, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+.chooseUsItem5 {
+    border-color: #551e6b;
+    color: #551e6b;
+}
+
+.chooseUsItem5 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #551e6b, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+.chooseUsItem6 {
+    border-color: #e1182e;
+    color: #e1182e;
+}
+
+.chooseUsItem6 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #e1182e, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+.chooseUsItem7 {
+    border-color: #e56919;
+    color: #e56919;
+}
+
+.chooseUsItem7 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #e56919, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+.chooseUsItem8 {
+    border-color: #0391d7;
+    color: #0391d7;
+}
+
+.chooseUsItem8 hr {
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), #0391d7, rgba(0, 0, 0, 0));
+    border: none;
+}
+
+/*-----------------------------------------contactUs----------------------------------------------*/
+.contactUs {
+    background-image: url(img/green-and-black-wallpapers-mobile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    margin-top: 200px;
+    padding: 100px;
+    overflow-x: hidden;
+}
+
+.contactUsblok {
+    border: solid 3px rgb(194, 199, 15);
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+}
+
+.contactUsTitle {
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+}
+
+.contacUsItem {
+    width: 43%;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    border: solid 2px rgb(194, 199, 15);
+    background-color: transparent;
+    margin: 2%
+}
+
+.contacUsArea {
+
+    border: solid 2px rgb(194, 199, 15);
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    width: 92%;
+    height: 150px;
+    padding: 10px;
+
+}
+
+.contacUsbutton {
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(194, 199, 15);
+    border-radius: 8px;
+    color: white;
+    margin: 40px;
+}
+
+.buttonDiv {
+    text-align: right;
+}
+
+
+.name,
+.contacUsbutton {
+    animation: moveLeft 1s;
+    animation-play-state: paused;
+
+
+}
+
+.email,
+.contacUsArea {
+    animation: moveRight 1s;
+    animation-play-state: paused;
+
+}
+
+
+.contacUsItem:focus::placeholder,
+.contacUsArea:focus::placeholder {
+    font-size: 0px;
+    transition: 1s;
+
+}
+
+/*-----------------------------------------footer----------------------------------------------*/
+
+.footer1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.footer2 {
+    color: white;
+
+    font-size: 25px;
+    text-align: center;
+}
+
+/*-----------------------------------------RegisterBlock----------------------------------------------*/
+.RegisterBlock {
+    border: 5px solid blue;
+    position: absolute;
+    top: 120px;
+    display: flex;
+    margin: 0 10%;
+
+    width: 80%;
+    flex-wrap: wrap;
+
+}
+
+.RegisterTitle {
+    color: #1c9bd9;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 0;
+    width: 100%;
+    animation: moveLeft 1s;
+    border: 2px #1c9bd9 solid;
+    border-width: 0 0 2px 0;
+    outline: none;
+
+}
+
+.RegisterTitle:hover {
+    background: #1c9bd9;
+    color: black;
+}
+
+.col1,
+.col2 {
+
+
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 5px;
+
+}
+
+.RegDiv {
+    background: none;
+    font-size: 18px;
+    color: #1c9bd9;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+
+    border: 2px #1c9bd9 solid;
+    border-width: 0 0 2px 0;
+    outline: none;
+}
+
+select {
+    width: 83% !important;
+}
+
+.RegDiv::placeholder {
+    font-size: 20px;
+    color: #1c9bd9;
+}
+
+.RegDiv:focus::placeholder {
+    font-size: 0;
+    transition: 1s;
+}
+
+.RegDiv1 {
+    background: none;
+    font-size: 18px;
+    color: #1c9bd9;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+
+    border: 2px red solid;
+    outline: none;
+
+
+}
+
+.col2 button {
+    position: relative;
+
+    font-size: 20px;
+    background-color: #1c9bd9;
+    color: white;
+    padding: 15px 45px;
+    border-radius: 5px;
+    margin: 30px 0 60px 0;
+    left: 030px
+}
+
+label {
+    color: red;
+    margin-left: 1%;
+}
+
+.col1 {
+    animation: moveLeft 1s;
+
+}
+
+.col2 {
+    animation: moveRight 1s;
+
+}
+
+/*-----------------------------------------1200----------------------------------------------*/
+@media screen and (max-width: 1200px) {
+
+    .b_main {
+        display: none;
+    }
+
+    .s_main {
+        display: block;
+    }
+
+
+
+    .logo {
+        width: 100px;
+        height: 40px;
+
+
+
+    }
+
+    .welcomePrimus {
+        display: block;
+
+
+    }
+
+    s._main {
+        position: fixed;
+        z-index: 50 !important;
+        height: 100px;
+        padding: 0;
+    }
+
+}
+
+/*-----------------------------------------600----------------------------------------------*/
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50px;
+        height: 20px;
+    }
+
+    .btn hr {
+        width: 40px;
+        margin-bottom: 5px;
+    }
+}

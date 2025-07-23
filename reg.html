@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main class="b_main">
+        <div class="main_iten"> <img src="img/logo.png" class="logo"></div>
+        <a href="index.html">
+            <div class="main_iten main_anim">HOME</div>
+        </a>
+        <div class="main_iten main_anim">PARTNES</div>
+        <div class="main_iten main_anim">OUR PROGRESS</div>
+        <div class="main_iten main_anim">ABOUT</div>
+        <div class="main_iten main_anim">WHY CHOOSE US</div>
+        <div class="main_iten main_anim">CONTACT</div>
+        <div class="main_iten main_anim">REGISTRATION</div>
+        <div class="main_iten main_anim">LOGIN</div>
+    </main>
+
+    <main class="s_main">
+        <div class="menu_btn">
+            <img src="img/logo.png" class="logo">
+            <div class="btn" onclick="bacel()">
+                <hr>
+                <hr>
+                <hr>
+
+            </div>
+
+        </div>
+        <div id="r_main" class="h_main">
+            <div class="main_iten main_anim">HOME</div>
+            <div class="main_iten main_anim">PARTNES</div>
+            <div class="main_iten main_anim">OUR PROGRESS</div>
+            <div class="main_iten main_anim">ABOUT</div>
+            <div class="main_iten main_anim">WHY CHOOSE US</div>
+            <div class="main_iten main_anim">CONTACT</div>
+            <div class="main_iten main_anim">REGISTRATION</div>
+            <div class="main_iten main_anim">LOGIN</div>
+        </div>
+    </main>
+    <form class="RegisterBlock">
+        <p class="RegisterTitle">Registration</p>
+
+
+        <div class="col1">
+
+            <input type="email" placeholder="Email" id="email" class="RegDiv" required>
+            <br>
+            <label id="lEmail"></label><br>
+
+
+            <input type="text" placeholder="First name" id="First" class="RegDiv">
+            <br>
+            <label id="lFirst"></label><br>
+
+
+            <input type="text" placeholder="Last name" id="Last" class="RegDiv">
+            <br>
+            <label id="lLast"></label><br>
+            <input type="password" placeholder="●●●●●" id="Pass1" onkeyup="pass1()" class="RegDiv">
+            <br>
+            <label id="lPass1"></label><br>
+            <input type="password" placeholder="●●●●●" id="Pass2" onkeyup="pass2()" class="RegDiv">
+            <br>
+            <label id="lPass2"></label><br>
+            <input type="text" placeholder="Company name" id="Company" class="RegDiv">
+            <br>
+            <label id="lCompany"></label><br>
+            <select class="RegDiv   ">
+                <option>Armenia</option>
+                <option>USA</option>
+                <option>Russian</option>
+                <option>United States</option>
+
+            </select>
+
+
+
+        </div>
+        <div class="col2">
+            <input type="text" placeholder="City" id="City" class="RegDiv"> <br>
+            <label id="lCity"></label><br>
+            <input type="text" placeholder="Addres" id="Addres" class="RegDiv"> <br>
+            <label id="lAddres"></label><br>
+            <input type="text" placeholder="State/Region" id="State/Region" class=" RegDiv"> <br>
+            <label id="lState/Region"></label><br>
+            <input type="text" placeholder="Zip code" id="Zip code" class="RegDiv"> <br>
+            <label id="lZip code"></label><br>
+
+            <input type="text" placeholder="Phone number" id="Phone number" class="RegDiv"> <br>
+            <label id="lPhone number"></label><br>
+            <input type="text" placeholder="SSN/TAX/VAT ID" id="SSN/TAX/VAT ID" class="RegDiv"> <br>
+            <label id="lSSN/TAX/VAT ID"></label><br>
+            <input type="text" placeholder="Invitation code" id="Invitation code" class="RegDiv"> <br>
+            <label id="lInvitation code"></label>
+            <br>
+
+<button type="button" onclick="register()">Register</button>
+        </div>
+                    
+
+    </form>
+
+
+</body>
+
+</html>
